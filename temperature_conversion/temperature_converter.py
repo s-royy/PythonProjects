@@ -10,8 +10,7 @@ def fahrenheit_to_celsius(fahrenheit: float) -> float:
     return (fahrenheit - 32) * 5 / 9
 
 
-def fahrenheit_to_kelvin(fahrenheit: float)
--> float:
+def fahrenheit_to_kelvin(fahrenheit: float) -> float:
     return celsius_to_kelvin(fahrenheit_to_celsius(fahrenheit))
 
 
@@ -21,7 +20,7 @@ def kelvin_to_celsius(kelvin: float) -> float:
 
 def kelvin_to_fahrenheit(kelvin: float) -> float:
     return celsius_to_fahrenheit(kelvin_to_celsius(kelvin))
-    
+
 
 def get_float(prompt: str) -> float:
     while True:

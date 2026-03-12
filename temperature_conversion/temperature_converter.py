@@ -20,3 +20,20 @@ def kelvin_to_celsius(kelvin: float) -> float:
 
 def kelvin_to_fahrenheit(kelvin: float) -> float:
     return celsius_to_fahrenheit(kelvin_to_celsius(kelvin))
+    
+
+def get_float(prompt: str) -> float:
+    while True:
+        try:
+            return float(input(prompt))
+        except ValueError:
+            print("Please enter a valid number.")
+
+
+def main():
+    while True:
+        print("\n--- Temperature Conversion Application ---")
+        print("1. Celsius to Fahrenheit and Kelvin")
+        print("2. Fahrenheit to Celsius and Kelvin")
+        print("3. Kelvin to Celsius and Fahrenheit")
+        print("4. Exit")

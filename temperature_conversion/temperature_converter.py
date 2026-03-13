@@ -47,3 +47,9 @@ def main():
         if choice not in {"1", "2", "3"}:
             print("Invalid choice. Try again.")
             continue
+            
+        temperature = get_float("Enter the temperature value: ")
+
+        if choice == "3" and temperature < 0:
+            print("Kelvin cannot be negative.")
+            continue

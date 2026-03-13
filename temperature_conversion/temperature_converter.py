@@ -68,3 +68,7 @@ def main():
             print(f"\n{temperature} Kelvin equals:")
             print(f"{kelvin_to_celsius(temperature):.2f} Celsius")
             print(f"{kelvin_to_fahrenheit(temperature):.2f} Fahrenheit")
+            
+
+if __name__ == "__main__":
+    main()

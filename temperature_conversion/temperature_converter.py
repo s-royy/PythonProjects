@@ -37,3 +37,9 @@ def main():
         print("2. Fahrenheit to Celsius and Kelvin")
         print("3. Kelvin to Celsius and Fahrenheit")
         print("4. Exit")
+
+        choice = input("Enter your choice (1-4): ").strip()
+
+        if choice == "4":
+            print("Thank you for using Temperature Converter!")
+            break

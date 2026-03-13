@@ -53,3 +53,13 @@ def main():
         if choice == "3" and temperature < 0:
             print("Kelvin cannot be negative.")
             continue
+            
+        if choice == "1":
+            print(f"\n{temperature} Celsius equals:")
+            print(f"{celsius_to_fahrenheit(temperature):.2f} Fahrenheit")
+            print(f"{celsius_to_kelvin(temperature):.2f} Kelvin")
+
+        elif choice == "2":
+            print(f"\n{temperature} Fahrenheit equals:")
+            print(f"{fahrenheit_to_celsius(temperature):.2f} Celsius")
+            print(f"{fahrenheit_to_kelvin(temperature):.2f} Kelvin")

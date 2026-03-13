@@ -47,13 +47,13 @@ def main():
         if choice not in {"1", "2", "3"}:
             print("Invalid choice. Try again.")
             continue
-            
+
         temperature = get_float("Enter the temperature value: ")
 
         if choice == "3" and temperature < 0:
             print("Kelvin cannot be negative.")
             continue
-            
+
         if choice == "1":
             print(f"\n{temperature} Celsius equals:")
             print(f"{celsius_to_fahrenheit(temperature):.2f} Fahrenheit")
@@ -63,12 +63,12 @@ def main():
             print(f"\n{temperature} Fahrenheit equals:")
             print(f"{fahrenheit_to_celsius(temperature):.2f} Celsius")
             print(f"{fahrenheit_to_kelvin(temperature):.2f} Kelvin")
-            
+
         elif choice == "3":
             print(f"\n{temperature} Kelvin equals:")
             print(f"{kelvin_to_celsius(temperature):.2f} Celsius")
             print(f"{kelvin_to_fahrenheit(temperature):.2f} Fahrenheit")
-            
+
 
 if __name__ == "__main__":
     main()

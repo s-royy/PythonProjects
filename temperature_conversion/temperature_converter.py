@@ -43,3 +43,7 @@ def main():
         if choice == "4":
             print("Thank you for using Temperature Converter!")
             break
+
+        if choice not in {"1", "2", "3"}:
+            print("Invalid choice. Try again.")
+            continue

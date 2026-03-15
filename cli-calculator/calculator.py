@@ -42,3 +42,23 @@ choice = input("Enter your choice (1-5): ").strip()
 
         num1 = get_float("Enter first number: ")
         num2 = get_float("Enter second number: ")
+
+       if choice == "4" and num2 == 0:
+            print("Division by zero is not allowed.")
+            continue
+
+        if choice == "1":
+            result = add(num1, num2)
+            print(f"Result: {result}")
+
+        elif choice == "2":
+            result = subtract(num1, num2)
+            print(f"Result: {result}")
+
+        elif choice == "3":
+            result = multiply(num1, num2)
+            print(f"Result: {result}")
+
+        elif choice == "4":
+            result = divide(num1, num2)
+            print(f"Result: {result}")

@@ -30,3 +30,15 @@ def main():
         print("3. Multiplication")
         print("4. Division")
         print("5. Exit")
+choice = input("Enter your choice (1-5): ").strip()
+
+        if choice == "5":
+            print("Thank you for using the calculator!")
+            break
+
+        if choice not in {"1", "2", "3", "4"}:
+            print("Invalid choice. Try again.")
+            continue
+
+        num1 = get_float("Enter first number: ")
+        num2 = get_float("Enter second number: ")

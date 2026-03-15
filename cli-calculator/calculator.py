@@ -30,7 +30,8 @@ def main():
         print("3. Multiplication")
         print("4. Division")
         print("5. Exit")
-choice = input("Enter your choice (1-5): ").strip()
+
+        choice = input("Enter your choice (1-5): ").strip()
 
         if choice == "5":
             print("Thank you for using the calculator!")
@@ -43,7 +44,7 @@ choice = input("Enter your choice (1-5): ").strip()
         num1 = get_float("Enter first number: ")
         num2 = get_float("Enter second number: ")
 
-       if choice == "4" and num2 == 0:
+        if choice == "4" and num2 == 0:
             print("Division by zero is not allowed.")
             continue
 
@@ -62,3 +63,7 @@ choice = input("Enter your choice (1-5): ").strip()
         elif choice == "4":
             result = divide(num1, num2)
             print(f"Result: {result}")
+
+
+if __name__ == "__main__":
+    main()

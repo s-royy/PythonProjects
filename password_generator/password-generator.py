@@ -29,3 +29,8 @@ def get_choice(prompt: str) -> bool:
         if choice in {"n", "no"}:
             return False
         print("Enter yes or no.")
+def main():
+    while True:
+        print("\n--- Password Generator ---")
+        print("1. Generate Password")
+        print("2. Exit")

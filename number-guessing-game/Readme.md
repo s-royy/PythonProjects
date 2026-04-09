@@ -1,4 +1,4 @@
-** Number Guessing Game
+## Number Guessing Game
 
 A Python CLI game where the user guesses a randomly generated number.
 

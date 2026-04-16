@@ -30,6 +30,45 @@ def add_expense(expenses):
 
     save_expenses(expenses)
     print("Expense added.")
+def view_expenses(expenses):
+    if not expenses:
+        print("No expenses found.")
+        return
 
+    total = 0
+    for i, exp in enumerate(expenses, start=1):
+        print(f"{i}. {exp['amount']} | {exp['category']} | {exp['description']}")
+        total += exp["amount"]
+
+    print(f"\nTotal: {total}")
+
+
+def main():
+    expenses = load_expenses()
+
+    while True:
+        print("\n--- Expense Tracker ---")
+        print("1. Add Expense")
+        print("2. View Expenses")
+        print("3. Exit")
+
+        choice = input("Enter choice (1-3): ").strip()
+
+        if choice == "3":
+            print("Goodbye!")
+            break
+
+        if choice == "1":
+            add_expense(expenses)
+
+        elif choice == "2":
+            view_expenses(expenses)
+
+        else:
+            print("Invalid choice.")
+
+
+if __name__ == "__main__":
+    main()
 
 

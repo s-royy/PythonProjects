@@ -30,6 +30,8 @@ def add_expense(expenses):
 
     save_expenses(expenses)
     print("Expense added.")
+
+
 def view_expenses(expenses):
     if not expenses:
         print("No expenses found.")
@@ -70,5 +72,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
